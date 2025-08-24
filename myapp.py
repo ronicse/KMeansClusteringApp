@@ -5,7 +5,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 
-st.title("KMeans Clustering App")
+st.title("\0001F308 KMeans Clustering App")
 st.subheader("Data Science with Dr. MS Rahman")
 
 # Sidebar
