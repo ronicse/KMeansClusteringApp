@@ -40,7 +40,12 @@ if len(features) == 0:
   st.write("Please select at least one feature.")
   st.stop()
 
+# Drop missing values
+df = df[features].dropna()
 
+# Elbow method
+st.subheader("Find Optimal Number of Clusters (Elbow Method)")
+max_k = st.slider("Maximum number of clusters to test", min_value=2, max_value=10, step=1)
 
 
 
