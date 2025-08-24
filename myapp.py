@@ -54,7 +54,7 @@ for k in range(1, max_k+1):
   wcss.append(kmeans.inertia_)
 
 
-fig_elbow, ax_elbow = plt.subplot()
+fig_elbow, ax_elbow = plt.subplots()
 ax_elbow.plot(range(1, max_k+1), wcss, marker='o')
 ax_elbow.set_xlabel('Number of Clusters (k)')
 ax_elbow.set_ylabel('WCSS (Intertial)')
