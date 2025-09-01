@@ -112,7 +112,7 @@ for feature in features:
     valid_input = False
 
 
-if.button("Predict Cluster"):
+if st.button("Predict Cluster"):
   if valid_input:
     input_df = pd.DataFrame([input_data])[features]
     cluster_pred = model.predict(input_df)
