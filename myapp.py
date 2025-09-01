@@ -45,7 +45,7 @@ df = df[features].dropna()
 
 # Elbow method
 st.subheader("Find Optimal Number of Clusters (Elbow Method)")
-max_k = st.slider("Maximum number of clusters to test", min_value=2, max_value=10, step=1)
+max_k = st.slider("Maximum number of clusters to test", min_value=2, max_value=10, value=10, step=1)
 wcss = []
 
 for k in range(1, max_k+1):
@@ -57,7 +57,7 @@ for k in range(1, max_k+1):
 fig_elbow, ax_elbow = plt.subplots()
 ax_elbow.plot(range(1, max_k+1), wcss, marker='o')
 ax_elbow.set_xlabel('Number of Clusters (k)')
-ax_elbow.set_ylabel('WCSS (Intertial)')
+ax_elbow.set_ylabel('WCSS (Inertia)')
 ax_elbow.set_title("Elbow Method For Optimal k")
 st.pyplot(fig_elbow)
 
