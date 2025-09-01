@@ -70,9 +70,12 @@ labels = model.labels_
 df_clustered = df.copy()
 df_clustered['Cluster'] = labels
 
+st.success("KMeans clustering complete !")
+
 # Show Dataset
 st.subheader("Final Dataset Preview")
 st.write(df_clustered.head())
+
 
 
 
