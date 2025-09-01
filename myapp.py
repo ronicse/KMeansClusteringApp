@@ -61,6 +61,10 @@ ax_elbow.set_ylabel('WCSS (Inertia)')
 ax_elbow.set_title("Elbow Method For Optimal k")
 st.pyplot(fig_elbow)
 
+st.subheader("KMeans Model Training")
+st.slider("Select number of clusters (k)", min_value=2, max_value=10, value=3, step=1)
+
+
 
 
 
