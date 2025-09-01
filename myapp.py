@@ -79,7 +79,11 @@ st.write(df_clustered.head())
 st.subheader("Cluster Centers (original scale)")
 st.write(pd.DataFrame(model.cluster_centers_, columns=features))
 
-
+if len(features) >= 2:
+  
+else:
+  st.info("Select at least two features to view scatter plot of clusters")
+  
 
 
 
